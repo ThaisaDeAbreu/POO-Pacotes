@@ -1,0 +1,47 @@
+package Biblioteca;
+
+import javax.swing.JOptionPane;
+public class Atendente_Livro {
+public static void main(String args[]) {
+	
+	Livraria l = new Livraria();
+	
+	String edi, aut, liv, pc, q, cd;
+	int quant, cod;
+	double pre;
+	
+	cd = JOptionPane.showInputDialog("Digite o codigo do genero:");
+	cod = Integer.parseInt(cd);
+	l.setCodigo(cod);
+	
+	edi = JOptionPane.showInputDialog("Digite a editora do livro:");
+	l.setEditora(edi);
+	
+	aut = JOptionPane.showInputDialog("Digite a autor do livro:");
+	l.setAutor(aut);
+	
+	liv = JOptionPane.showInputDialog("Digite a nome do livro:");
+	l.setLivro(liv);
+	
+	q = JOptionPane.showInputDialog("Digite a quantidade de livros:");
+	quant = Integer.parseInt(q);
+	l.setQuantidade(quant);
+	
+	pc = JOptionPane.showInputDialog("Digite a preco do livro:");
+	pre = Double.parseDouble(pc);
+	l.setPreco(pre);
+	
+	System.out.println("Editora: \t" + l.getEditora());  
+	System.out.println("Autor: \t" + l.getAutor()); 
+	System.out.println("Nome do livro: \t" +  l.getLivro());
+	System.out.println("Quantidade: \t" + l.getQuantidade()); 
+	System.out.println("Preco: \t" + l.getPreco()); 
+
+
+	
+}
+
+	
+	
+     
+}
