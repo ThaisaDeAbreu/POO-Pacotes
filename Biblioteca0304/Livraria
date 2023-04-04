@@ -29,6 +29,10 @@ public class Livraria {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
+
+	public int getCodigo() {
+		return codigo;
+	}
 		
 	public String getEditora() {
 		return editora;
@@ -50,8 +54,35 @@ public class Livraria {
 		return preco;
 	}
 
-	
-		 
+	public void Informa_Livros(l.getCodigo()) {
+		
+		switch(codigo) {
+		
+		case 1: JOptionPane.showMessageDialog(null, "Categoria Romance \n" +
+		"Livro: " + l.getLivro() +
+		"\n Editora: " + l.getEditora() +
+		"\n Autor:" + l.getAutor() +
+		"\n Quantidade: " + l.getQuantidade() +
+		"\n Preço: " + l.getPreco(), "", JOptionPane. PLAIN_MESSAGE); break;
+		
+		case 2: JOptionPane.showMessageDialog(null, "Categoria Suspense \n" +
+	    "Livro: " + l.getLivro() +
+		"\n Editora: " + l.getEditora() +
+		"\n Autor: " + l.getAutor() +
+		"\n Quantidade: " + l.getQuantidade() +
+		"\n Preço: " + l.getPreco(), "", JOptionPane. PLAIN_MESSAGE); break;
+		
+	    case 3: JOptionPane.showMessageDialog(null, "Categoria Ficcao \n" +
+	    "Livro: " + l.getLivro() +
+	    "\n Editora: " + l.getEditora() +
+	    "\n Autor:" + l.getAutor() +
+	    "\n Quantidade: " + l.getQuantidade() +
+	    "\n Preço: " + l.getPreco(), "", JOptionPane. PLAIN_MESSAGE); break;
+	    
+	    default: System.out.println("Código não corresponde a nenhuma categoria de livro");
+	    
+		
+		}		
    
 
 }

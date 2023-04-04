@@ -1,4 +1,4 @@
-package Biblioteca;
+package biblio;
 
 import javax.swing.JOptionPane;
 public class Atendente_Livro {
@@ -31,12 +31,7 @@ public static void main(String args[]) {
 	pre = Double.parseDouble(pc);
 	l.setPreco(pre);
 	
-	System.out.println("Editora: \t" + l.getEditora());  
-	System.out.println("Autor: \t" + l.getAutor()); 
-	System.out.println("Nome do livro: \t" +  l.getLivro());
-	System.out.println("Quantidade: \t" + l.getQuantidade()); 
-	System.out.println("Preco: \t" + l.getPreco()); 
-
+	l.Informa_Livros();
 
 	
 }
